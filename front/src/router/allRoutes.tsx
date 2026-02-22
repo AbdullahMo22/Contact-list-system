@@ -1,0 +1,16 @@
+export const allRoutes = {
+  home: "/",
+  login: "/login",
+  dashboard: "/dashboard",
+  forbidden: "/forbidden",
+  adminRoles: "/dashboard/roles",
+  adminRolePermissions: (id: string | number) => `/dashboard/roles/${id}/permissions`,
+  adminUsers: "/dashboard/users",
+  adminUserRoles: (id: string | number) => `/dashboard/users/${id}/roles`,
+  adminUserScope: (id: string | number) => `/dashboard/users/${id}/scope`,
+  adminPermissions: "/dashboard/permissions",
+  contacts: "/dashboard/contacts",
+  contactsNew: "/dashboard/contacts/new",
+  organization: "/dashboard/organization",
+  auditLog: "/dashboard/logs",
+};
