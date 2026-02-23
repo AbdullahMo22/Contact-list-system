@@ -36,14 +36,11 @@ const MainLayout = () => {
   const loc = useLocation();
   const routes = allRoutes;
 
-  // Derive user info
-  const username = user?.username ?? user?.name ?? 'User';
-  const roleLabel =
-    user?.role ??
-    user?.roleName ??
-    (user?.roles?.[0]?.name ? String(user.roles[0].name) : 'USER');
-  const avatarSrc = user?.avatar ?? user?.imageUrl ?? '';
-
+  // // Derive user info
+const u = user as any;
+  const username = u?.username ?? u?.name ?? 'User';
+  const roleLabel = u?.role ?? u?.roleName ?? (u?.roles?.[0]?.name ? String(u.roles[0].name) : 'USER');
+  const avatarSrc = u?.avatar ?? u?.imageUrl ?? '';
   // Navigation Items
   const navItems = useMemo(
     () => [
