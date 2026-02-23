@@ -290,7 +290,7 @@ const ContactManagement: React.FC = () => {
 
   // ── Render ──────────────────────────────────────────────────────────────────
   return (
-    <div className="p-4 md:p-6 space-y-5 bg-slate-50 min-h-full" dir="rtl">
+    <div className="p-1 md:p-1.5 space-y-5 bg-slate-50 min-h-full" dir="rtl">
 
       {/* Header */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between bg-white rounded-2xl border border-slate-200 shadow-sm px-5 py-4">

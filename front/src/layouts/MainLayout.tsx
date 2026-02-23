@@ -217,12 +217,11 @@ const MainLayout = () => {
         </div>
       </aside>
 
-      {/* Main Content Wrapper - with dynamic margin */}
-      <div 
+       <div 
         className={cn(
           "flex-1 flex flex-col min-h-screen transition-all duration-300 ease-in-out w-full",
           // Desktop margins based on sidebar state
-          sidebarCollapsed ? "lg:mr-20" : "lg:mr-72",
+          sidebarCollapsed ? "lg:mr-4" : "lg:mr-10",
           // Mobile margin always 0
           "mr-0"
         )}
